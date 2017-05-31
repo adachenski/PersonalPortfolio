@@ -1,0 +1,170 @@
+
+    /* Note: Try to remove the following lines to see the effect of CSS positioning */
+    
+    @font-face {
+      font-family: 'Segoe UI';
+      src: url('../extenral_modules/bower_components/segoe-fonts/fonts/light/segoeuil.eot');
+      src: url('../extenral_modules/bower_components/segoe-fonts/fonts/light/segoeuil.eot?#iefix') format('embedded-opentype'), url('../extenral_modules/bower_components/segoe-fonts/fonts/light/segoeuil.woff') format('woff'), url('../extenral_modules/bower_components/segoe-fonts/fonts/light/segoeuil.svg#SegoeUI') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+      position: relative;
+      font-family: 'Segoe UI Light', 'Segoe', 'Segoe UI', 'SegoeUI-Light-final', Tahoma, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+    }
+    
+    html {
+      background-color: lightgray;
+    }
+    
+    .affix {
+      top: 0;
+      width: 100%;
+    }
+    
+    .affix+.container-fluid {
+      padding-top: 70px;
+    }
+    
+    .navbar {
+      z-index: 100;
+    }
+    
+    #section1 {
+      padding-top: 50px;
+      height: 500px;
+      color: #fff;
+      background-color: #1E88E5;
+    }
+    
+    #section2 {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      color: #fff;
+      background-color: #673ab7;
+    }
+    
+    #section3 {
+      padding-top: 50px;
+      height: 500px;
+      color: #fff;
+      background-color: #ff9800;
+    }
+    
+    #section41 {
+      padding-top: 50px;
+      height: 500px;
+      color: #fff;
+      background-color: #00bcd4;
+    }
+    
+    #section42 {
+      padding-top: 50px;
+      height: 500px;
+      color: #fff;
+      background-color: #009688;
+    }
+    
+    .header-img {
+      border-radius: 50%;
+    }
+    
+    .centered {
+      text-align: center;
+    }
+    
+    .project-box {
+      width: 200px;
+      height: 200px;
+      background-image: url("ProfileMe.PNG");
+       background-repeat: no-repeat;
+    background-size: 100% 100%;
+      /*border: 5px solid black;*/
+      display: block;
+    }
+    /*.project-box:hover {
+      border: 4px solid black;
+    }*/
+    
+    .project-box>h1 {
+      /*margin-top: 130px;*/
+      /*font-size: 3em;*/
+    }
+    
+    .project-box>h2 {
+      /*font-size: 1.5em;*/
+    }
+    
+    .img-info {
+      /*position: absolute;*/
+      height: 100%;
+      opacity: 0.8;
+      background: #000;
+      bottom: 0;
+      padding: 12px;
+      text-align: center;
+    }
+    
+    .img-info:hover {
+      animation-name: imgInf;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      transition-timing-function: ease-in;
+    }
+    
+    @keyframes imgInf {
+      0% {
+        /*transform:  translateY(-10%);*/
+        opacity: 0.8;
+      }
+      20% {
+        opacity: 0.4;
+        /*transform:  translateY(-100%);*/
+      }
+      100% {
+        opacity: 0;
+        /*transform:  translateY(-100%);*/
+      }
+    }
+    
+    .img-container {
+      padding-top: 50px;
+      /*padding-bottom: 50px;*/
+      transform: perspective(400px) rotateY(12deg);
+      -webkit-transform: perspective(400px) rotateY(12deg);
+      width: 90%;
+    }
+    
+    .img-container:hover {
+      animation-name: thumbTilt;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      transition-timing-function: ease-in;
+      -webkit-animation-name: thumbTilt;
+      -webkit-animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      -webkit-transition-timing-function: ease-in;
+    }
+    
+    @keyframes thumbTilt {
+      0% {
+        transform: perspective(400px) rotateY(12deg) scale(1);
+        -webkit-transform: perspective(400px) rotateY(12deg) scale(1);
+        -o-transform: perspective(400px) rotateY(12deg) scale(1);
+      }
+      20% {
+        transform: perspective(400px) rotateY(-15deg) scale(1.1);
+        -webkit-transform: perspective(400px) rotateY(-15deg) scale(1.1);
+        -o-transform: perspective(400px) rotateY(-15deg) scale(1.1);
+      }
+      100% {
+        transform: perspective(400px) rotateY(0deg) scale(1.2);
+        -webkit-transform: perspective(400px) rotateY(0deg) scale(1.2);
+        -o-transform: perspective(400px) rotateY(0deg) scale(1.2);
+      }
+    }

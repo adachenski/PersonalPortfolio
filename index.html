@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid" style="background-color:#222;color:#fff;height:200px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                    <img width="180" height="180" class="header-img" src="http://i1204.photobucket.com/albums/bb414/Atanas_Dachenski/ProfileMe/AtanasProfile_zps39x433u3.jpg"
+                        alt="Atanas Dachenski">
+                </div>
+                <div class="col-sm-5">
+                    <h3>Web Developer - Graphic Artis</h3>
+                    <div>
+                        Front-End Developer and UX/UI designer, with practical experience in project management, branding strategy, and creative
+                        direction; devoted to functional programming and information architecture.
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <h1>Bootstrap Affix Example</h1>
+                    <h3>Fixed (sticky) navbar on scroll</h3>
+                    <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Personal Portfolio</a>
+            </div>
+            <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#section1">About </a></li>
+                    <li><a href="#section2">Portfolio</a></li>
+                    <li><a href="#section3">Contacts</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+        <!--/.container-fluid -->
+    </nav>
+
+    <div class="container">
+
+        <div id="section1" class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>About Me</h1>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, libero, fugit. Molestiae possimus, nostrum odio iure quos,
+                        optio accusamus ipsa.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>Skills</h1>
+                    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section
+                        and look at the navigation bar while scrolling!</p>
+                    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section
+                        and look at the navigation bar while scrolling!</p>
+                </div>
+                <div class="col-sm-6">
+                    <h1>Sertification</h1>
+                    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section
+                        and look at the navigation bar while scrolling!</p>
+                    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section
+                        and look at the navigation bar while scrolling!</p>
+                </div>
+            </div>
+        </div>
+        <div id="section2" class="container-fluid">
+            <h1>Portfolio</h1>
+
+            <div class="row">
+
+                <div class="col-sm-6 col-md-3 col-xs-12">
+                    <div class="img-container">
+                        <div class="project-box" style="background-image:url('http://i1204.photobucket.com/albums/bb414/Atanas_Dachenski/PersonalPortfolio/NaskoRestaurant_zpszrztbg1u.png');">
+                            <div class="img-info">
+                                <h1>"Project"</h1>
+                                <h3>JustMovies</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-xs-12">
+                    <div class="img-container">
+                        <div class="project-box" style="background-image:url('http://i1204.photobucket.com/albums/bb414/Atanas_Dachenski/PersonalPortfolio/ProfileMe_zpsvmtp5vwx.png');">
+                            <div class="img-info">
+                                <h1>"Project"</h1>
+                                <h3>ProfileMe</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-xs-12">
+                    <div class="img-container">
+                        <div class="project-box" style="background-image:url('http://i1204.photobucket.com/albums/bb414/Atanas_Dachenski/PersonalPortfolio/NinjaRun_zpsr8zp7qfn.png');">
+                            <div class="img-info">
+                                <h1>"Project"</h1>
+                                <h3>Ninja Run</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-xs-12">
+                    <div class="img-container">
+                        <div class="project-box" style="background-image:url('http://i1204.photobucket.com/albums/bb414/Atanas_Dachenski/PersonalPortfolio/NaskoRestaurant_zpszrztbg1u.png');">
+                            <div class="img-info">
+                                <h1>"Project"</h1>
+                                <h3>Nasko's Restaurant</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="section3" class="container-fluid">
+            <h1>Section 3</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+                at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+                at the navigation bar while scrolling!</p>
+        </div>
+        <div id="section41" class="container-fluid">
+            <h1>Section 4 Submenu 1</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+                at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+                at the navigation bar while scrolling!</p>
+        </div>
+        <div id="section42" class="container-fluid">
+            <h1>Section 4 Submenu 2</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+                at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+                at the navigation bar while scrolling!</p>
+        </div>
+    </div>
+</body>
+</html>
