@@ -16,20 +16,20 @@
     <div class="container-fluid" style="background-color:#222;color:#fff;height:200px;">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-2">
+                <div class="col-md-2 col-sm-3 col-xs-12" style="text-align:center">
                     <img width="180" height="180" class="header-img" src="http://i1204.photobucket.com/albums/bb414/Atanas_Dachenski/ProfileMe/AtanasProfile_zps39x433u3.jpg"
                         alt="Atanas Dachenski">
                 </div>
-                <div class="col-sm-5">
+                <div class="col-sm-5 hidden-xs">
                     <h3>Web Developer - Graphic Artis</h3>
                     <div>
                         Front-End Developer and UX/UI designer, with practical experience in project management, branding strategy, and creative
                         direction; devoted to functional programming and information architecture.
                     </div>
                 </div>
-                <div class="col-sm-5">
+                <div class="col-md-5 col-sm-4 hidden-xs">
                     <h1>Bootstrap Affix Example</h1>
-                    <h3>Fixed (sticky) navbar on scroll</h3>
+
                     <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
                 </div>
             </div>
@@ -39,9 +39,15 @@
     <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Personal Portfolio</a>
+                <button type="button" class="navbar-toggle navbar-fixed-top" data-toggle="collapse" data-target="#navigationbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" ui-sref="movieApp">JUST MOVIES</a>
             </div>
-            <div id="myNavbar">
+            <div class="collapse navbar-collapse" id="navigationbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#section1">About </a></li>
                     <li><a href="#section2">Portfolio</a></li>
@@ -153,4 +159,5 @@
         </div>
     </div>
 </body>
+
 </html>
