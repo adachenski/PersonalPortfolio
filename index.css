@@ -79,7 +79,7 @@
     }
     
     .header-img {
-      border-radius: 50%;
+      margin-top: 40px; 
     }
     .form-control, .btn{
         border-radius:0 !important;
@@ -107,6 +107,10 @@
       bottom: 0;
       padding: 12px;
       text-align: center;
+    }
+
+    .img-info > h3{
+        color: #f8f8f8;
     }
     
     .img-info:hover {
